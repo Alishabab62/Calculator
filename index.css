@@ -12,20 +12,33 @@ body{
 .calc{
    height: 70vh;
    width: 40vw;
-   background-image: linear-gradient(to right, red , yellow);
+   /* background-image: linear-gradient(to right, red , yellow); */
    margin-top: 7%;
    position: relative;
-   box-shadow: blue 0px 54px 55px, blue 0px -12px 30px, blue 0px 4px 6px, blue 0px 12px 13px, blue 0px -3px 5px;
+   /* box-shadow: blue 0px 12px 12px, blue 0px -12px 30px, blue 0px 4px 6px, blue 0px 12px 13px, blue 0px -3px 5px; */
 }
 .output{
     height: 13%;
     width: 90%;
-    background-color: chartreuse;
-    margin: auto;
+    background-color: lightgray;
     border-radius: 15px;
     top: 20px;
-    position: absolute;
+    position: relative;
     left: 30px;
+}
+.output #previous{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    font-size: 20px;
+    padding-right: 30px;
+}
+.output #current{
+    position: absolute;
+    right: 0px;
+    padding-right: 30px;
+    font-size: 30px;
+    bottom: 0px;
 }
 .table{
     

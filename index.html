@@ -5,44 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <div class="calc">
         <div class="output">
-            <div class="previous">Previous</div>
-            <div class="current">Current</div>
+            <div id="previous" data-previous-operand></div>
+            <div id="current" data-current-operand></div>
         </div>
         <table class="table">
             <tr>
-                <td colspan="2"><button>AC</button></td>
-                <td><button>%</button></td>
-                <td><button>/</button></td>
+                <td class="ac"><button data-all-clear>AC</button></td>
+                <td><button data-delete>DEL</button></td>
+                <td><button data-operation class="ope">%</button></td>
+                <td><button data-operation class="ope">/</button></td>
             </tr>
             <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>X</button></td>
+                <td><button data-number class="num">7</button></td>
+                <td><button data-number class="num">8</button></td>
+                <td><button data-number class="num">9</button></td>
+                <td><button data-operation class="ope">X</button></td>
             </tr>
             <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>-</button></td>
+                <td><button data-number class="num">4</button></td>
+                <td><button data-number class="num">5</button></td>
+                <td><button data-number class="num">6</button></td>
+                <td><button data-operation class="ope">-</button></td>
             </tr>
             <tr>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
-                <td><button>+</button></td>
+                <td><button data-number class="num">1</button></td>
+                <td><button data-number class="num">2</button></td>
+                <td><button data-number class="num">3</button></td>
+                <td><button data-operation class="ope">+</button></td>
             </tr>
             <tr>
-                <td><button>0</button></td>
-                <td><button>.</button></td>
-                <td colspan="2"><button>=</button></td>
+                <td><button class="num" data-number>0</button></td>
+                <td><button class="num" data-number>.</button></td>
+                <td colspan="2" class="equal" data-equals ><button>=</button></td>
             </tr>
         </table>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
